@@ -1,0 +1,114 @@
+<body class="nk-body bg-white npc-general pg-auth">
+  <div class="nk-app-root">
+      <!-- main @s -->
+      <div class="nk-main ">
+          <!-- wrap @s -->
+          <div class="nk-wrap nk-wrap-nosidebar">
+              <!-- content @s -->
+              <div class="nk-content ">
+                  <div class="nk-block nk-block-middle nk-auth-body wide-xs">
+                      <div class="brand-logo pb-4 text-center">
+                          <a href="html/index.html" class="logo-link">
+                              <img class="logo-light logo-img logo-img-lg" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
+                              <img class="logo-dark logo-img logo-img-lg" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                          </a>
+                      </div>
+                      <div class="card card-bordered">
+                          <div class="card-inner card-inner-lg">
+                              <div class="nk-block-head">
+                                  <div class="nk-block-head-content" style="text-align: center;">
+                                      <h4 class="nk-block-title">Register</h4>
+                                      <div class="nk-block-des">
+                                          <p>Create New Nakore Account</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <form [formGroup]="registerform" (ngSubmit)="proceedregistration()">
+                                  <div class="form-group">
+                                      <label class="form-label" for="name">First Name</label>
+                                      <div class="form-control-wrap">
+                                          <input type="text" class="form-control form-control-lg" id="firstname" formControlName="first_name" placeholder="Enter your name">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label class="form-label" for="lastname">Last Name</label>
+                                    <div class="form-control-wrap">
+                                        <input type="text" class="form-control form-control-lg" id="lastname" formControlName="last_name" placeholder="Enter your lastname">
+                                    </div>
+                                </div>
+
+                                  <div class="form-group">
+                                      <label class="form-label" for="email">Email or Username</label>
+                                      <div class="form-control-wrap">
+                                          <input type="text" class="form-control form-control-lg" id="email" formControlName="email" placeholder="Enter your email address or username">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label class="form-label" for="password">Passcode</label>
+                                      <div class="form-control-wrap">
+                                          <a href="#" class="form-icon form-icon-right passcode-switch lg" data-target="password">
+                                              <em class="passcode-icon icon-show icon ni ni-eye"></em>
+                                              <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
+                                          </a>
+                                          <input type="password" class="form-control form-control-lg" id="password" formControlName="password" placeholder="Enter your passcode">
+                                      </div>
+                                  </div>
+
+
+                                    <div class="form-group">
+                                        <label class="form-label">Role</label>
+                                        <div class="form-control-wrap">
+                                            <select class="form-select js-select2" formControlName="role">
+                                                <option value="default_option">Select</option>
+                                                <option value="option_select_category">Basic</option>
+                                                <option value="option_select_category">Supervisor</option>
+                                                <option value="option_select_category">Admin</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+
+                                  <div class="form-group">
+                                      <div class="custom-control custom-control-xs custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox">
+                                          <label class="custom-control-label" for="checkbox">I agree to Nakore <a href="#">Privacy Policy</a> &amp; <a href="#"> Terms.</a></label>
+                                      </div>
+                                  </div>
+                                    <div>
+                                      <button>Submit</button>
+                                    </div>
+
+                                  <div class="form-group">
+                                      <button class="btn btn-lg btn-primary btn-block">Register</button>
+                                  </div>
+                              </form>
+                              <div class="form-note-s2 text-center pt-4"> Already have an account? <a routerLink="/login" routerLinkActive="active"><strong>Sign in instead</strong></a>
+                              </div>
+
+
+                          </div>
+                      </div>
+                  </div>
+                  <div class="nk-footer nk-auth-footer-full">
+                      <div class="container wide-lg">
+                          <div class="row g-3">
+
+                              <div class="col-lg-12">
+                                  <div class="nk-block-content text-center text-lg-left">
+                                      <p class="text-soft">&copy; 2022 Nakore. All Rights Reserved.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- wrap @e -->
+          </div>
+          <!-- content @e -->
+      </div>
+      <!-- main @e -->
+  </div>

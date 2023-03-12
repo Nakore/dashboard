@@ -1,0 +1,310 @@
+<div class="nk-sidebar" data-content="sidebarMenu" style="width: 20%;">
+  <div class="nk-sidebar-bar">
+      <div class="nk-apps-brand">
+          <a href="html/index.html" class="logo-link">
+              <img class="logo-light logo-img" src="src/assets/images/logo1.png" >
+              <img class="logo-dark logo-img" src="src/assets/images/logo1.png">
+          </a>
+      </div>
+
+  </div>
+  <div class="nk-sidebar-main is-light">
+      <div class="nk-sidebar-inner" data-simplebar >
+
+          <div class="nk-menu-content menu-active" >
+              <h1 class="title">Nakore</h1>
+              <ul class="nk-menu">
+                  <li class="nk-menu-item">
+                      <a routerLink="/dashboard"  routerLinkActive="active" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                          <span class="nk-menu-text">Dashboard</span>
+                      </a>
+                  </li>
+
+
+
+                  <li class="nk-menu-item has-sub" data-collapse-toggle="dropdown-example2">
+                      <a class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                          <span class="nk-menu-text">Farmers</span>
+                      </a>
+                      <ul class="nk-menu-sub" id="dropdown-example2" class="hidden py-2 space-y-2" id="dropdown-example2">
+                          <li class="nk-menu-item">
+                              <a routerLink="/farmer-registration"  routerLinkActive="active" class="nk-menu-link"><span class="nk-menu-text">Add Farmer</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a routerLink="/farmer-list"  routerLinkActive="active" class="nk-menu-link"><span class="nk-menu-text">View Farmer Detail</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a routerLink="/farmer-transaction"  routerLinkActive="active" class="nk-menu-link"><span class="nk-menu-text">View Transaction</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub" aria-controls="dropdown-example3" data-collapse-toggle="dropdown-example3">
+                      <a  class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
+                          <span class="nk-menu-text">Products</span>
+                      </a>
+                      <ul class="nk-menu-sub" class="hidden py-2 space-y-2" id="dropdown-example3">
+                          <li class="nk-menu-item">
+                              <a routerLink="/add-product"  routerLinkActive="active" class="nk-menu-link"><span class="nk-menu-text">Add Product</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a routerLink="/product"  routerLinkActive="active" class="nk-menu-link"><span class="nk-menu-text">Product Details</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub" aria-controls="dropdown-example4" data-collapse-toggle="dropdown-example4">
+                      <a class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
+                          <span class="nk-menu-text">Orders</span>
+                      </a>
+                      <ul class="nk-menu-sub" class="hidden py-2 space-y-2" id="dropdown-example4">
+                          <li class="nk-menu-item">
+                              <a routerLink="/orders"  routerLinkActive="active" class="nk-menu-link"><span class="nk-menu-text">Add Orders</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a routerLink="/order-details"  routerLinkActive="active" class="nk-menu-link"><span class="nk-menu-text">Order Details</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item">
+                      <a routerLink="/retailer"  routerLinkActive="active" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-user-fill"></em></span>
+                          <span class="nk-menu-text">User Profile</span>
+                      </a>
+                  </li><!-- .nk-menu-item -->
+                <!-- .nk-menu-item -->
+              </ul><!-- .nk-menu -->
+          </div>
+
+          </div>
+      </div>
+  </div>
+
+
+    <!-- Add Appoinment-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="addAppointment">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+              <div class="modal-body modal-body-md">
+                  <h5 class="modal-title">Add Appointment</h5>
+                  <form action="#" class="mt-4">
+                      <div class="row g-gs">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label" for="name">Name</label>
+                                  <div class="form-control-wrap">
+                                      <input type="text" class="form-control" id="name" placeholder="Name">
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label" for="mobile">Mobile No</label>
+                                  <div class="form-control-wrap">
+                                      <input type="text" class="form-control" id="mobile" placeholder="Mobile No.">
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label">Appointment Date</label>
+                                  <div class="form-control-wrap">
+                                      <div class="form-icon form-icon-right">
+                                          <em class="icon ni ni-calendar"></em>
+                                      </div>
+                                      <input type="text" class="form-control date-picker" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy">
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label" for="serial">Serial No</label>
+                                  <div class="form-control-wrap">
+                                      <input type="text" class="form-control" id="serial" placeholder="Serial No">
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label">Department</label>
+                                  <div class="form-control-wrap">
+                                      <select class="form-select js-select2" data-placeholder="Select Department">
+                                          <option value="">Select</option>
+                                          <option value="option_select_department">Anesthesiology</option>
+                                          <option value="option_select_department">Cardiology</option>
+                                          <option value="option_select_department">Dermatology</option>
+                                          <option value="option_select_department">Diagnostic radiology</option>
+                                          <option value="option_select_department">Emergency medicine</option>
+                                          <option value="option_select_department">Neurology</option>
+                                          <option value="option_select_department">Obstetrics and gynecology</option>
+                                          <option value="option_select_department">Ophthalmology</option>
+                                          <option value="option_select_department">Pathology</option>
+                                          <option value="option_select_department">Pediatrics</option>
+                                          <option value="option_select_department">Psychiatry</option>
+                                          <option value="option_select_department">Surgery</option>
+                                          <option value="option_select_department">Urology</option>
+                                      </select>
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label">Doctor</label>
+                                  <div class="form-control-wrap">
+                                      <select class="form-select js-select2" data-placeholder="Select Doctor">
+                                          <option value="">Select Doctor</option>
+                                          <option value="option_select_consulant">Joe Larson</option>
+                                          <option value="option_select_consulant">Emma Walker</option>
+                                          <option value="option_select_consulant">Ernesto Vargas</option>
+                                          <option value="option_select_consulant">Patrick Newman</option>
+                                          <option value="option_select_consulant">Amelia Grant</option>
+                                          <option value="option_select_consulant">Debra Grant</option>
+                                          <option value="option_select_consulant">Snyder Debra</option>
+                                      </select>
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label">Status</label>
+                                  <div class="form-control-wrap">
+                                      <select class="form-select js-select2" data-placeholder="Select Status">
+                                          <option value="">Select</option>
+                                          <option value="option_select_status">Apporve</option>
+                                          <option value="option_select_status">Pending</option>
+                                          <option value="option_select_status">cancel</option>
+                                      </select>
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-12">
+                              <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                  <li>
+                                      <button data-bs-dismiss="modal" class="btn btn-primary">Add Appointment</button>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="link link-light" data-bs-dismiss="modal">Cancel</a>
+                                  </li>
+                              </ul>
+                          </div><!-- .col -->
+                      </div>
+                  </form>
+              </div><!-- .modal-body -->
+          </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+  </div><!-- .modal -->
+  <!-- Edit Appoinment-->
+  <div class="modal fade" tabindex="-1" role="dialog" id="editAppointment">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+              <div class="modal-body modal-body-md">
+                  <h5 class="modal-title">Edit Appointment</h5>
+                  <form action="#" class="mt-4">
+                      <div class="row g-gs">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label" for="editName">Name</label>
+                                  <div class="form-control-wrap">
+                                      <input type="text" class="form-control" id="editName" placeholder="Name" value="Abu Bin Ishtiyak">
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label" for="editMobile">Mobile No</label>
+                                  <div class="form-control-wrap">
+                                      <input type="text" class="form-control" id="editMobile" placeholder="Mobile No." value="+811 847-4958">
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label">Appointment Date</label>
+                                  <div class="form-control-wrap">
+                                      <div class="form-icon form-icon-right">
+                                          <em class="icon ni ni-calendar"></em>
+                                      </div>
+                                      <input type="text" class="form-control date-picker" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy" value="18/12/2020">
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label" for="serial-edit">Serial No</label>
+                                  <div class="form-control-wrap">
+                                      <input type="text" class="form-control" id="serial-edit" placeholder="Serial No" value="05">
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label">Department</label>
+                                  <div class="form-control-wrap">
+                                      <select class="form-select js-select2" data-placeholder="Select Department">
+                                          <option value="">Select</option>
+                                          <option value="default_option">Gastroenterology</option>
+                                          <option value="option_select_department">Anesthesiology</option>
+                                          <option value="option_select_department">Cardiology</option>
+                                          <option value="option_select_department">Dermatology</option>
+                                          <option value="option_select_department">Diagnostic radiology</option>
+                                          <option value="option_select_department">Emergency medicine</option>
+                                          <option value="option_select_department">Neurology</option>
+                                          <option value="option_select_department">Obstetrics and gynecology</option>
+                                          <option value="option_select_department">Ophthalmology</option>
+                                          <option value="option_select_department">Pathology</option>
+                                          <option value="option_select_department">Pediatrics</option>
+                                          <option value="option_select_department">Psychiatry</option>
+                                          <option value="option_select_department">Surgery</option>
+                                          <option value="option_select_department">Urology</option>
+                                      </select>
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label">Doctor</label>
+                                  <div class="form-control-wrap">
+                                      <select class="form-select js-select2" data-placeholder="Select Doctor">
+                                          <option value="">Select</option>
+                                          <option value="option_select_consulant">Joe Larson</option>
+                                          <option value="option_select_consulant">Janet Snyder</option>
+                                          <option value="option_select_consulant">Amelia Grant</option>
+                                          <option value="option_select_consulant">Debra Grant</option>
+                                          <option value="option_select_consulant">Snyder Debra</option>
+                                      </select>
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label">Status</label>
+                                  <div class="form-control-wrap">
+                                      <select class="form-select js-select2" data-placeholder="Select Status">
+                                          <option value="">Select</option>
+                                          <option value="option_select_status">Approved</option>
+                                          <option value="option_select_status">Pending</option>
+                                          <option value="option_select_status">cancel</option>
+                                      </select>
+                                  </div>
+                              </div>
+                          </div><!-- .col -->
+                          <div class="col-12">
+                              <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                  <li>
+                                      <button data-bs-dismiss="modal" class="btn btn-primary">Update</button>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="link link-light" data-bs-dismiss="modal">Cancel</a>
+                                  </li>
+                              </ul>
+                          </div><!-- .col -->
+                      </div>
+                  </form>
+              </div><!-- .modal-body -->
+          </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+  </div><!-- .modal -->

@@ -1,0 +1,68 @@
+
+  <div class="nk-app-root" class="nk-body bg-white npc-general pg-auth">
+      <!-- main @s -->
+      <div class="nk-main ">
+          <!-- wrap @s -->
+          <div class="nk-wrap nk-wrap-nosidebar">
+              <!-- content @s -->
+              <div class="nk-content ">
+                  <div class="nk-block nk-block-middle nk-auth-body  wide-xs">
+                      <div class="brand-logo pb-4 text-center">
+                          <a href="html/index.html" class="logo-link">
+                              <img class="logo-light logo-img logo-img-lg" src="src/assets/images/logo.png" alt="logo">
+                              <img class="logo-dark logo-img logo-img-lg" src="C:\Users\oolut\Documents\nakore\nakore\src\assets\images\jsTree\logo1.png">
+
+                          </a>
+                      </div>
+                      <div class="card card-bordered">
+                          <div class="card-inner card-inner-lg">
+                              <div class="nk-block-head">
+                                  <div class="nk-block-head-content" style="text-align: center;">
+                                      <h1 class="nk-block-title" style="font-size: larger;">Sign-In</h1>
+                                      <div class="nk-block-des">
+                                          <p>Admin Login.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <form [formGroup]="loginform" (ngSubmit)="login()">
+                                  <div class="form-group">
+                                      <div class="form-label-group">
+                                          <label class="form-label" for="default-01">Email or Username</label>
+                                      </div>
+                                      <div class="form-control-wrap">
+                                          <input type="text" class="form-control form-control-lg" id="default-01" formControlName="email" placeholder="Enter your email address or username">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <div class="form-label-group">
+                                          <label class="form-label" for="password">Password</label>
+                                          <a class="link link-primary link-sm" href="html/pages/auths/auth-reset-v2.html">Forgot Code?</a>
+                                      </div>
+                                      <div class="form-control-wrap">
+                                          <a href="#" class="form-icon form-icon-right passcode-switch lg" data-target="password">
+                                              <em class="passcode-icon icon-show icon ni ni-eye"></em>
+                                              <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
+                                          </a>
+                                          <input type="password" class="form-control form-control-lg" formControlName="password" id="password" placeholder="Enter your passcode">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <button class="btn btn-lg btn-primary btn-block">Sign in</button>
+                                  </div>
+                              </form>
+                              <div class="form-note-s2 text-center pt-4"><a routerLink="/register" routerLinkActive="active">Create an account</a>
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+                              <div class="col-lg-12">
+                                  <div class="nk-block-content text-center text-lg-left">
+                                      <p class="text-soft">&copy; 2023 Nakore. All Rights Reserved.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- wrap @e -->

@@ -1,0 +1,252 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "user": [
+    {
+      "first_name": "John",
+      "last_name": "Olutekunbi",
+      "email": "oolutekunbi@gmail.com",
+      "password": "5024",
+      "role": "Admin"
+    }
+  ],
+  "farmers": [
+    {
+      "id": "1",
+      "first_name": "John",
+      "last_name": "Olutekunbi",
+      "phone_number": "08140928756",
+      "pin": "5024",
+      "address": "75 Buba Sauri Sreet, Ungwan Romi",
+      "state": "Kaduna",
+      "LGA": "Kachia",
+      "farm_location": "Ungwan Dome",
+      "GeoLocation": "46.1429638,-118.9090416",
+      "average_cultivation": "20",
+      "crops_cultivating": "Yam"
+    },
+    {
+      "id": "wm-inj7"
+    },
+    {
+      "id": "50Dxl6M"
+    },
+    {
+      "id": "EaX6Nf0"
+    },
+    {
+      "first_name": "",
+      "last_name": "",
+      "phone_number": "",
+      "pin": "",
+      "address": "",
+      "state": "",
+      "LGA": "",
+      "GeoLocation": "",
+      "crops_cultivating": "",
+      "average_cultivation": "",
+      "id": "dF8nqVP"
+    },
+    {
+      "first_name": "",
+      "last_name": "",
+      "phone_number": "",
+      "pin": "",
+      "address": "adaada",
+      "state": "das",
+      "LGA": "sdd",
+      "GeoLocation": "ad",
+      "crops_cultivating": "ad",
+      "average_cultivation": "ads",
+      "id": "su9fAlg"
+    },
+    {
+      "first_name": "",
+      "last_name": "",
+      "phone_number": "+2348035111905",
+      "pin": "012",
+      "address": "adaada",
+      "state": "das",
+      "LGA": "sdd",
+      "GeoLocation": "ad",
+      "crops_cultivating": "ad",
+      "average_cultivation": "ads",
+      "id": "7X8gK_7"
+    },
+    {
+      "first_name": "",
+      "last_name": "Ayenotoqw",
+      "phone_number": "+2348035111905",
+      "pin": "012",
+      "address": "adaada",
+      "state": "das",
+      "LGA": "sdd",
+      "GeoLocation": "ad",
+      "crops_cultivating": "ad",
+      "average_cultivation": "ads",
+      "id": "jjEaZ50"
+    },
+    {
+      "first_name": "Peterqw",
+      "last_name": "Ayenotoqw",
+      "phone_number": "+2348035111905",
+      "pin": "012",
+      "address": "adaada",
+      "state": "das",
+      "LGA": "sdd",
+      "GeoLocation": "ad",
+      "crops_cultivating": "ad",
+      "average_cultivation": "ads",
+      "id": "YDV_7rA"
+    },
+    {
+      "first_name": "",
+      "last_name": "Mohammed",
+      "phone_number": "",
+      "pin": "",
+      "address": "",
+      "state": "",
+      "LGA": "",
+      "GeoLocation": "",
+      "crops_cultivating": "",
+      "average_cultivation": "",
+      "id": "IrmWGLe"
+    },
+    {
+      "first_name": "Buhari",
+      "last_name": "Mohammed",
+      "phone_number": 2349063635999,
+      "pin": 0,
+      "address": "",
+      "state": "",
+      "LGA": "",
+      "GeoLocation": "",
+      "crops_cultivating": "",
+      "average_cultivation": "",
+      "id": "wHs0wZe"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "order_id": "1",
+      "orders_date": "2020-12-12",
+      "farmers_id": "12",
+      "farmers_name": "Mohammed Ahmed",
+      "product_name": "Gramazol",
+      "product_price": "1000",
+      "product_quantity": "2",
+      "state": "Adamawa",
+      "LGA": "Gumi",
+      "address": "75 Buba Sauri Sreet, Ungwan Romi",
+      "retailer": "Mr. Adamu",
+      "status": "Completed",
+      "geolocation": "1234423232311"
+    },
+    {
+      "id": "6",
+      "order_id": "6",
+      "orders_date": "2021-01-20",
+      "farmers_id": "67",
+      "farmers_name": "Musa Bello",
+      "product_name": "Seed Drill",
+      "product_price": "5000",
+      "product_quantity": "1",
+      "state": "Adamawa",
+      "LGA": "Jada",
+      "address": "24 Hospital Road, Ganye",
+      "retailer": "Mr. Hamza",
+      "status": "In Progress",
+      "geolocation": "9321200398123"
+      },
+      {
+        "id": "5",
+        "order_id": "5",
+        "orders_date": "2020-12-17",
+        "farmers_id": "56",
+        "farmers_name": "Hassan Mustapha",
+        "product_name": "Irrigation Kit",
+        "product_price": "3000",
+        "product_quantity": "2",
+        "state": "Adamawa",
+        "LGA": "Michika",
+        "address": "10 Gombi Road, Bazza",
+        "retailer": "Mrs. Yusuf",
+        "status": "Completed",
+        "geolocation": "2341239834983"
+        },
+        {
+          "id": "4",
+          "order_id": "4",
+          "orders_date": "2021-01-02",
+          "farmers_id": "45",
+          "farmers_name": "Fatima Aliyu",
+          "product_name": "Hoe Classic",
+          "product_price": "500",
+          "product_quantity": "7",
+          "state": "Adamawa",
+          "LGA": "Yola",
+          "address": "7 Modibbo Adama Road, Jimeta",
+          "retailer": "Mr. Tukur",
+          "status": "Cancelled",
+          "geolocation": "9834520093423"
+          },
+          {
+            "id": "3",
+            "order_id": "3",
+            "orders_date": "2020-12-05",
+            "farmers_id": "34",
+            "farmers_name": "Abdullahi Ibrahim",
+            "product_name": "Fertilizer XL",
+            "product_price": "2000",
+            "product_quantity": "3",
+            "state": "Adamawa",
+            "LGA": "Numan",
+            "address": "15 Main Street, Sabon Layi",
+            "retailer": "Mr. Bello",
+            "status": "In Progress",
+            "geolocation": "1325420039121"
+            },
+            {
+              "id": "2",
+              "order_id": "2",
+              "orders_date": "2020-11-25",
+              "farmers_id": "23",
+              "farmers_name": "Aisha Mohammed",
+              "product_name": "Harvest King",
+              "product_price": "1500",
+              "product_quantity": "5",
+              "state": "Adamawa",
+              "LGA": "Mubi",
+              "address": "32 Kofa Road, Bakin Kogi",
+              "retailer": "Mrs. Abubakar",
+              "status": "Completed",
+              "geolocation": "2235438232323"
+              }
+  ],
+  "retailers": [
+    {
+      "retailers_id": "1",
+      "first_name": "John",
+      "last_name": "Olutekunbi",
+      "phone_number": "08140928756",
+      "pin": "5024",
+      "address": "75 Buba Sauri Sreet, Ungwan Romi",
+      "state": "Kaduna",
+      "LGA": "Kachia",
+      "GeoLocation": "46.1429638,-118.9090416"
+    }
+  ]
+}

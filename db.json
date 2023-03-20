@@ -224,7 +224,7 @@
               "order_id": "2",
               "orders_date": "2020-11-25",
               "farmers_id": "23",
-              "farmers_name": "Aisha Mohammed",
+              "farmers_name": "Mallam Ali",
               "product_name": "Harvest King",
               "product_price": "1500",
               "product_quantity": "5",
@@ -232,7 +232,7 @@
               "LGA": "Mubi",
               "address": "32 Kofa Road, Bakin Kogi",
               "retailer": "Mrs. Abubakar",
-              "status": "Completed",
+              "status": "In Progress",
               "geolocation": "2235438232323"
               }
   ],

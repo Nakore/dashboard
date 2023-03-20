@@ -39,6 +39,7 @@ export class DashboardComponent {
   productsList: ProductArr[] = [];
 
   productLength:number | undefined;
+  orderLength: number | undefined;
 
   constructor(private api:ProductService, private api1:FarmerRegistrationService){
     this.getProducts();
@@ -85,6 +86,10 @@ getOrder=()=>{
   this.api.getallOrder().subscribe(
     data=>{
      this.orderList=data;
+     this.orderLength=this.orderList.length;
+     const completedItems = this.orderList.filter(item => item.status === 'completed');
+     //this.completedItemsLength = completedItems.length;
+
 
     },
     error=>{
@@ -92,5 +97,7 @@ getOrder=()=>{
     }
   )
 }
+
+
 
 }
